@@ -1,113 +1,171 @@
-import Image from 'next/image'
+import Link from "next/link";
+import "flowbite";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
+    <div>
+      <main id="home" className="mt-20">
+        <p className="m-5 mx-32 text-[3rem] font-bold text-transparent bg-clip-text bg-gradient-to-b from-gray-900 to-gray-600">
+          ahmad falah.
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+        <p className="text-[4rem] mx-32 font-bold text-transparent bg-clip-text bg-gradient-to-b from-gray-900 to-gray-600 ">
+          a passionate front end web developer who recently graduate from
+          Pamulang University
+        </p>
+        <p className="mt-24 m-5 mx-32 text-[2rem] font-bold text-gray-800">
+          Bachelor in Informatics Engineering 💻
+        </p>
+      </main>
+      <section id="techStack" className="mt-[12rem]">
+        <h1 className="text-[3rem] text-center text-gray-800">
+          My Tech Stack 💻
+        </h1>
+        <div className="flex justify-center">
+          <Link
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
             target="_blank"
-            rel="noopener noreferrer"
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+            <img
+              src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png"
+              alt="JavaScript"
+              className="h-24 m-5 mx-12 mt-20"
             />
-          </a>
+          </Link>
+          <Link href="https://react.dev/" target="_blank">
+            <img
+              src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+              alt="ReactJs"
+              className="h-24 m-5 mx-12 mt-20"
+            />
+          </Link>
+          <Link href="https://nextjs.org/" target="_blank">
+            <img
+              src="https://cdn1.iconfinder.com/data/icons/akar-vol-1/24/nextjs-fill-512.png"
+              alt="NextJs"
+              className="h-24 m-5 mx-12 mt-20"
+            />
+          </Link>
+          <Link href="https://tailwindcss.com/" target="_blank">
+            <img
+              src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg"
+              alt="TailwindCSS"
+              className="h-24 m-5 mx-12 mt-20"
+            />
+          </Link>
         </div>
-      </div>
+      </section>
+      <section id="personalProject">
+        <h1 className="text-[3rem] text-center text-gray-800 m-5 mt-40">
+          My Project 💼
+        </h1>
+        <project1>
+          <div className="mx-auto items-center mt-20">
+            <div class="mx-auto mt-10 m-5 max-w-sm bg-gray-100 bg-gradient-to-b via-sky-200 from-sky-300 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <a
+                href="https://react-mini-project-alpha.vercel.app/"
+                target="_blank"
+              >
+                <img
+                  class="rounded-t-lg"
+                  src="https://i.ibb.co/8zYgYQd/regflix.jpg"
+                  alt="Regflix"
+                />
+              </a>
+              <div class="p-5">
+                <a
+                  href="https://react-mini-project-alpha.vercel.app/"
+                  target="_blank"
+                >
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    Regflix
+                  </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  Website yang terinspirasi dari netflix tetapi mengusung ui
+                  yang berbeda dan simple, menggunakan data API dari The Movie
+                  Database API
+                </p>
+                <a
+                  href="https://react-mini-project-alpha.vercel.app/"
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  target="_blank"
+                >
+                  Menuju Website
+                  <svg
+                    aria-hidden="true"
+                    class="w-4 h-4 ml-2 -mr-1"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <h1 className="text-center mt-10 text-xl">Technology</h1>
+          <div className="flex justify-center">
+            <img
+              src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+              alt="ReactJs"
+              className="h-24 m-5 mx-12 mt-10"
+            />
+            <img
+              src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg"
+              alt="TailwindCSS"
+              className="h-24 m-5 mx-12 mt-10"
+            />
+            <img
+              src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg"
+              alt="TailwindCSS"
+              className="h-24 m-5 mx-12 mt-10"
+            />
+          </div>
+        </project1>
+      </section>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+      <section id="myContact">
+        <h1 className="text-[3rem] text-center text-gray-800 m-5 mt-40">
+          My Contact 🚀
+        </h1>
+        <div class="m-10 mb-24 mx-auto w-full max-w-sm bg-gray-100 bg-gradient-to-b via-sky-200 from-sky-300 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <div class="flex flex-col items-center pb-10 pt-8">
+            <img
+              class="w-24 h-24 mb-3 rounded-full shadow-lg"
+              src="https://media.licdn.com/dms/image/D5603AQEW0FQxBQRprw/profile-displayphoto-shrink_800_800/0/1676189170813?e=1691625600&v=beta&t=FT_Y-kVW59YCHP8t7iiRaKiLuLc7DZUnWH_fMAD-2Ms"
+              alt="Bonnie image"
+            />
+            <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+              Ahmad Falah
+            </h5>
+            <span class="text-sm text-gray-500 dark:text-gray-400">
+              falah.wizzard@gmail.com
             </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+            <div class="flex mt-4 space-x-3 md:mt-6">
+              <a
+                href="https://www.linkedin.com/in/ahmad-falah-2a06a5196/"
+                class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+              <a
+                href="mailto:falah.wizzard@gmail.com
+                "
+                class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
+                target="_blank"
+              >
+                Email Me
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
 }
