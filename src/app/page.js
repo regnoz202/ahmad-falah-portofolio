@@ -68,7 +68,7 @@ export default function Home() {
               >
                 <img
                   class="rounded-t-lg"
-                  src="https://i.ibb.co/8zYgYQd/regflix.jpg"
+                  src="https://i.ibb.co/SRdJhKz/regflix.jpg"
                   alt="Regflix"
                 />
               </a>
