@@ -5,19 +5,19 @@ import "flowbite";
 export default function Home() {
   return (
     <div>
-      <main id="home" className="mt-20">
-        <p className="m-5 mx-32 text-[3rem] font-bold text-transparent bg-clip-text bg-gradient-to-b from-gray-900 to-gray-600">
+      <main id="home" className="mt-44">
+        <p className="m-5 mx-44 text-[3rem] font-bold text-transparent bg-clip-text bg-gradient-to-b from-gray-900 to-gray-600">
           ahmad falah.
         </p>
-        <p className="text-[4rem] mx-32 font-bold text-transparent bg-clip-text bg-gradient-to-b from-gray-900 to-gray-600 ">
+        <p className="text-[4rem] mx-44 font-bold text-transparent bg-clip-text bg-gradient-to-b from-gray-900 to-gray-600 ">
           a passionate front end web developer who recently graduate from
           Pamulang University
         </p>
-        <p className="mt-24 m-5 mx-32 text-[2rem] font-bold text-gray-800">
+        <p className="mt-24 m-5 mx-44 text-[2rem] font-bold text-gray-800">
           Bachelor in Informatics Engineering 💻
         </p>
       </main>
-      <section id="techStack" className="mt-[12rem]">
+      <section id="techStack" className="mt-[15rem]">
         <h1 className="text-[3rem] text-center text-gray-800">
           My Tech Stack 💻
         </h1>
@@ -55,12 +55,13 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <section id="personalProject">
-        <h1 className="text-[3rem] text-center text-gray-800 m-5 mt-40">
+      
+      <section id="personalProject" className="mt-[15rem]">
+        <h1 className="text-[3rem] text-center text-gray-800 m-5">
           My Project 💼
         </h1>
         <project1>
-          <div className="mx-auto items-center mt-20">
+          <div className="items-center mx-auto mt-20">
             <div class="mx-auto mt-10 m-5 max-w-sm bg-gray-100 bg-gradient-to-b via-sky-200 from-sky-300 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <a
                 href="https://react-mini-project-alpha.vercel.app/"
@@ -109,7 +110,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <h1 className="text-center mt-10 text-xl">Technology</h1>
+          <h1 className="mt-10 text-xl text-center">Technology</h1>
           <div className="flex justify-center">
             <img
               src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
@@ -130,11 +131,11 @@ export default function Home() {
         </project1>
       </section>
 
-      <section id="myContact">
-        <h1 className="text-[3rem] text-center text-gray-800 m-5 mt-40">
+      <section id="myContact" className="mt-[15rem]">
+        <h1 className="text-[3rem] text-center text-gray-800 m-5">
           My Contact 🚀
         </h1>
-        <div class="m-10 mb-24 mx-auto w-full max-w-sm bg-gray-100 bg-gradient-to-b via-sky-200 from-sky-300 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="m-10 mb-[15rem] mx-auto w-full max-w-sm bg-gray-100 bg-gradient-to-b via-sky-200 from-sky-300 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <div class="flex flex-col items-center pb-10 pt-8">
             <img
               class="w-24 h-24 mb-3 rounded-full shadow-lg"
